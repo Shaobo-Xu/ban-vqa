@@ -4,7 +4,8 @@
 ## Script for downloading data
 
 # GloVe Vectors
-wget -P data http://nlp.stanford.edu/data/glove.6B.zip
+#wget -P data http://nlp.stanford.edu/data/glove.6B.zip
+wget -P data http://nlp.stanford.edu/data/wordvecs/glove.6B.zip
 unzip data/glove.6B.zip -d data/glove
 rm data/glove.6B.zip
 
