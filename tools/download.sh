@@ -31,6 +31,15 @@ wget -P data https://s3.amazonaws.com/cvmlp/vqa/mscoco/vqa/v2_Annotations_Val_ms
 unzip data/v2_Annotations_Val_mscoco.zip -d data
 rm data/v2_Annotations_Val_mscoco.zip
 
+# Genome
+wget -P data http://visualgenome.org/static/data/dataset/question_answers.json.zip
+unzip data/question_answers.json.zip -d data
+rm data/question_answers.json.zip
+
+wget -P data http://visualgenome.org/static/data/dataset/image_data.json.zip
+unzip data/image_data.json.zip -d data
+rm data/image_data.json.zip
+
 # Image Features
 wget -P data https://imagecaption.blob.core.windows.net/imagecaption/trainval.zip
 wget -P data https://imagecaption.blob.core.windows.net/imagecaption/test2014.zip
