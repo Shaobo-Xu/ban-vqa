@@ -63,3 +63,19 @@ wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1m5p
 tar xvf data/cache/cache.pkl.tgz -C data/cache/
 rm data/cache/cache.pkl.tgz
 
+# VQA Input Images
+
+#wget -P data http://msvocds.blob.core.windows.net/coco2014/train2014.zip
+wget -P data http://images.cocodataset.org/zips/train2014.zip
+unzip data/train2014.zip -d data/
+rm data/train2014.zip
+
+#wget -P data http://msvocds.blob.core.windows.net/coco2014/val2014.zip
+wget -P data http://images.cocodataset.org/zips/val2014.zip
+unzip data/val2014.zip -d data/
+rm data/val2014.zip
+
+#wget -P data http://msvocds.blob.core.windows.net/coco2015/test2015.zip
+wget -P data http://images.cocodataset.org/zips/test2015.zip
+unzip data/test2015.zip -d data/
+rm data/test2015.zip
