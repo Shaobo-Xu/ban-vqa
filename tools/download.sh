@@ -40,6 +40,10 @@ wget -P data http://visualgenome.org/static/data/dataset/image_data.json.zip
 unzip data/image_data.json.zip -d data
 rm data/image_data.json.zip
 
+wget -P data http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+unzip data/annotations_trainval2017.zip -d data
+rm data/annotations_trainval2017.zip
+
 # Image Features
 wget -P data https://imagecaption.blob.core.windows.net/imagecaption/trainval.zip
 wget -P data https://imagecaption.blob.core.windows.net/imagecaption/test2014.zip
